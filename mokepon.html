@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset = "utf-8" />
+        <meta charset="utf-8" />
         <title>MOKEPON!</title>
-        <script src = "js/codigo.js"></script>
-        <link rel = "stylesheet" href = "./css/styles.css">
+        <script src="js/codigo.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
         
-        <section id = "seleccionar-mascota">
-            <!--la etiqueta seccion se utiliza para organizar el codigo en secciones-->
-            <!--el atributo id se utiliza pata darle nombre a las etiquetas-->
-            <H1 class = "titulo">MOKEPON! 🔥💧🌱</H1>
+        <section id="seleccionar-mascota">
+            <!--la etiqueta seccion se utiliza para organizar el codigo en secciones y el atributo id se utiliza pata darle nombre a las etiquetas-->
+            <H1 class="titulo">MOKEPON! 🔥💧🌱</H1>
 
             <h2>Elige tu mascota</h2>
 
-            <label for = "hipodoge">Hipodoge</label> 
-            <input type = "radio" name = "mascota" id = "hipodoge"/>
-            <!--la etiqiete label le pone nombre a los input-->
-            <!--el atributo for vincula un label con un input, poniendole al for el mismo valor que le colocamos al atributo id en el imput
-                como resultado la persona puede marcar la seleccion haciendo click tanto en el radio como en el nombre-->
+            <label class="tarjeta-de-mokepon" for="hipodoge">Hipodoge</label> 
+            <input type="radio" name="mascota" id="hipodoge"/>
+            <!--la etiqieta label le pone nombre a los input-->
+            <!--el atributo for vincula un label con un input, poniendole al for el mismo valor que le colocamos al atributo id en el imput, como resultado la persona puede marcar la seleccion haciendo click tanto en el radio como en el nombre-->
 
-            <label for = "capipepo">Capipepo</label>
-            <input type = "radio" name = "mascota" id = "capipepo"/>
+            <label class="tarjeta-de-mokepon" for="capipepo">Capipepo</label>
+            <input type="radio" name="mascota" id="capipepo"/>
 
-            <label for = "ratigueya">Ratigueya</label>
-            <input type = "radio" name = "mascota" id = "ratigueya"/>
+            <label class="tarjeta-de-mokepon" for="ratigueya">Ratigueya</label>
+            <input type="radio" name="mascota" id="ratigueya"/>
             <!--el input es la etiqueta para ingresa valores-->
             <!--el atributo type me ayuda a determinar que tipo de dato quiero que ingrese el usuario-->
             <!--el valor radio pone un boton para poder seleccionar -->
-            <!--el atributo name me ayuda a agrupar los inputs para que pertenezcan al mismo grupo, y asi cuando el usuario marque un radio y despues otro 
-                no queden ambos seleccionados y se canbie automaticamanete la selección-->
+            <!--el atributo name me ayuda a agrupar los inputs para que pertenezcan al mismo grupo, y asi cuando el usuario marque un radio y despues otro no queden ambos seleccionados y se canbie automaticamanete la selección-->
         
-            <button id = "boton-mascota">Seleccionar</button>
+            <label class="boton-seleccionar-mascota" for="boton-mascota">Seleccionar</label>
+            <button id="boton-mascota"></button>
         </section>
         
-        <section id = "seleccionar-ataque">
+        <section id="seleccionar-ataque">
+            <H1 class="titulo">MOKEPON! 🔥💧🌱</H1>
+
             <h2>Elige tu ataque</h2>
 
-            <p>Tu mascota <span id = mascota-jugador></span> tiene <span id = "vidas-jugador">3</span> vidas</p>
-            <p>La mascota <span id = mascota-enemigo></span> del enemigo tiene <span id = "vidas-enemigo">3</span> vidas</p>
+            <p>Tu mascota <span id=mascota-jugador></span> tiene <span id = "vidas-jugador">3</span> vidas</p>
+            <p>La mascota <span id=mascota-enemigo></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
             <!--la etiqueta span permite que el texto que esta dentro de ella pueda cambiarse a voluntad con js, esto es llamado manipular el DOM-->
             <p>
-                <button id = "boton-fuego">Fuego 🔥</button>
-                <button id = "boton-agua">Agua 💧</button>
-                <button id = "boton-tierra">Tierra 🌱</button>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">Agua 💧</button>
+                <button id="boton-tierra">Tierra 🌱</button>
             </p>
         </section>
 
-        <section id = "mensajes">
-            <!--<p>Tu mascota atacó con fuego, la mascota del enemigo atacó con tierra - GANASTE 🎉</p>-->
+        <section id="mensajes">
+            <!--Estos mensajes se crean con JavaScript-->
         </section>
 
-        <SECTION id = "reiniciar">
-            <button id = "boton-reiniciar">Reiniciar</button>
+        <SECTION id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
         </SECTION>
 
        
