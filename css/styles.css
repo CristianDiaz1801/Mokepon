@@ -1,32 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Share:ital@1&display=swap'); /*con este enlace importo la fuente de letra que voy a utilizar*/
+
 body {
-    background-color: rgb(51, 51, 51);
-}
-.titulo {
-    color: orangered;
-    width: 225px;
-    height: 50px;
-    background-color: aquamarine;
+    background-color: #00FFAB;
+    font-family: 'Share', cursive;
 }
 
 /*en css existen muchos tipos de sisplay, hasta el momento veremos tres fundamentales: display inline, display block y display inline block. y estos nos dicen como estan estructurados los elementos de css en la web: block ocupa toda la pantalla horizontalmente, inline ocupa solo un pedacito. a los block y a los inline block se les puede cambiar el tamaño, a los inline no, ya vienen predeterminados.*/
 #seleccionar-mascota {
     display: flex; /*con estapropiedad y este valor, le decimos al elemento padre, nuestra seccion de seleccionar-mascota, que utilice la tecnologia flexbox*/
     flex-direction: column; /*con esta propiedad puedo organizar a los hijos, en este caso el valor es column asi que quedaran uno debajo del otro, ya que por defecto estan uno al lado del otro*/
-    justify-content: center; /*con esta propiedad puedo colocar loe elementos en cualquier parte del contenedor padre, en este caso los estamos centrando de forma vertical */
+    justify-content: center; /*con esta propiedad puedo colocar los elementos en cualquier parte del contenedor padre, en este caso los estamos centrando de forma vertical */
     align-items: center;/*con esta propiedad centro los elementos de forma horizontal*/
 }
 /*normalmente justify-content centra horizontamlente y align-items verticalmente, aqui lo estamos haciendo al revez ya que cambiamos el sentido de los elementos con flex-direction.*/
 
+.titulo {
+    color: orangered;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: orangered;
+    font-size: 20px;
+}
+
+.tarjetas {
+    display: flex; /*utilizando display flex, ponemos las cajas una al lado de la otra.*/
+    gap: 10px; /*esta propiedad da espacio entre las cajas, lo mismo que el margin, gap da simplemente un espacio, margin le da a cada etiqueta un espacio en el borde a cada una asi que se suman.*/
+}
+
 .tarjeta-de-mokepon {
-    width: 100px;
-    height: 50px;
-    background: aquamarine;
+    width: 180px;
+    height: 100px;
+    background: #14C38E;
     padding: 10px;
     box-sizing: border-box; /*esta propiedad me permite que padding y border no agranden la caja, y en vez de sumarle el tamaño de estos dos, lo ponga hacia adentro y nuestra caja siga siendo del tamaño inicial que le dimos.*/
-    border: 1px solid hotpink;
-    margin: 10px;
+    border: 1px solid orangered;
+    margin: 0px; /*margin 0 porque con gap ya le pusimos un espacio*/
+    border-radius: 20px; /*propiedad para redondear los bordes de las cajas.*/
+    display: flex; /*organizamos contenido uno al lado del otro.*/
+    justify-content: center; /*centramos contenigo horizontalmente*/
+    align-items: center; /*centramos contenigo verticalmente*/
+    color:white; /*color de la letra*/
 }
 /*una caja en css se compone de los siguientes elementos, desde adentro hacia afuera son: Content(es donde va el contenido puesto en html), Padding(es el borde interno entre el contenido y el borde de la caja), Border(es la linea que delimita a la caja), Margin(es el espacio externo entre cajas).*/
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
 
 input {
     display: none; /*esta propiedad oculta las etiquetas de input, en este caso los radio no son visibles.*/
